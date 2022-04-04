@@ -1,41 +1,44 @@
-Departments
--
-dept_no varchar pk
-dept_name varchar
+#  Creating tables for PH-EmployeeDB
 
-Employees
+departments
 -
-emp_no int pk
-birth_date date
-first_name varchar
-last_name varchar
-gender varchar
-hire_date date
+dept_no VARCHAR(4) PK
+dept_name VARCHAR(40) UNIQUE
 
-Dept_Managers
+dept_emp
 -
-dept_no varchar pk fk - departments.dept_no
-emp_no int pk fk - employees.emp_no
-from_date date
-to_date date
+emp_no INT PK FK - employees.emp_no
+dept_no VARCHAR PK FK - departments.dept_no
+from_date DATE
+to_date DATE
 
-Dept_Emp
+employees
 -
-emp_no int pk fk - employees.emp_no
-dept_no varchar pk fk - Departments.dept_no
-from_date date
-to_date date
+emp_no INT PK
+birth_date DATE
+first_name VARCHAR
+last_name VARCHAR
+gender VARCHAR
+hire_date DATE
 
-Salaries
+dept_manager
 -
-emp_no int pk fk - employees.emp_no
-salary int
-from_date date
-to_date date
+dept_no VARCHAR(4) PK FK - departments.dept_no
+emp_no INT PK FK - employees.emp_no
+from_date DATE
+to_date DATE
 
-Titles
+salaries
 -
-emp_no int pk fk - employees.emp_no
-title varchar pk
-from_date date pk
-to_date date
+emp_no INT PK FK - employees.emp_no
+salary INT
+from_date DATE
+to_date DATE
+
+titles
+-
+emp_no INT PK FK - employees.emp_no
+title VARCHAR PK
+from_date DATE PK
+to_date DATE
+
