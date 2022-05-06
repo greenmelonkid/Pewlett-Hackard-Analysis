@@ -14,7 +14,7 @@ Use images as support where needed.
 
 - 72,458 people are retiriing, out of the 300,024 people employed. There are about 24% 
 of the employed staff retiring.
-ADD COUNT TABLE HERE
+![retiring_titles](https://user-images.githubusercontent.com/99292945/167209813-27eac436-d0ac-4eda-b9fd-fae7f19a0b00.png)
 
 - There are 50,842 employees in a senior position retiring. In the future, maybe they 
 can have the senior staff employees, retiring or not, get trained on how to become in 
